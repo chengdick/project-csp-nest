@@ -4,6 +4,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { ArticleModule } from './modules/article/article.module';
 import { SnakeNamingStrategy } from 'typeorm-naming-strategies';
+import { UserModule } from './modules/user/user.module';
 @Module({
   imports: [
     TypeOrmModule.forRoot({
@@ -20,6 +21,7 @@ import { SnakeNamingStrategy } from 'typeorm-naming-strategies';
       //dropSchema: true,
     }),
     ArticleModule,
+    UserModule,
   ],
   // controllers: [AppController],
   // providers: [AppService],

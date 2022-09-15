@@ -60,7 +60,7 @@ export class ArticleService {
       .getOne();
 
     return {
-      info: articleDetial || {},
+      info: articleDetial,
     };
   }
 
