@@ -15,7 +15,7 @@ export class RegisterDTO {
 
   @ApiProperty({
     description: '用户名',
-    example: '斯提芬大狗',
+    example: '1csp',
   })
   @IsNotEmpty({ message: '请输入用户昵称' })
   @IsString({ message: '名字必须是 String 类型' })

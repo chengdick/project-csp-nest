@@ -5,6 +5,7 @@ import { AppService } from './app.service';
 import { ArticleModule } from './modules/article/article.module';
 import { SnakeNamingStrategy } from 'typeorm-naming-strategies';
 import { UserModule } from './modules/user/user.module';
+import { GitModule } from './modules/git/git.module';
 @Module({
   imports: [
     TypeOrmModule.forRoot({
@@ -22,6 +23,7 @@ import { UserModule } from './modules/user/user.module';
     }),
     ArticleModule,
     UserModule,
+    GitModule,
   ],
   // controllers: [AppController],
   // providers: [AppService],
