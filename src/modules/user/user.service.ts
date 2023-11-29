@@ -46,7 +46,7 @@ export class UserService {
     newUser.password = hashPassword;
     newUser.salt = salt;
     const result = await this.userRepository.save(newUser);
-    delete result.password;
+    delete result.password
     delete result.salt;
     return {
       info: result,
